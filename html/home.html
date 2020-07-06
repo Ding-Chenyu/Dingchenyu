@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--链接使用CSS样式表-->
+    <link rel="stylesheet" href="../css/style-home.css">
+    <!--设置页面名称-->
+    <title>Home</title>
+</head>
+<body>
+    <!--导航区nav-->
+    <div align = "center">
+		<nav>
+            <!--导航区左侧logo-->
+            <div class="logo">MyPage</div>
+            <!--end of logo-->
+            <!--导航区中间三个链接nav-items-->
+			<div class="nav-items">
+				<li><a href="./home.html">Home</a></li>
+				<li><a href="./introduction.html">Introduction</a></li>
+				<li><a href="./travel.html">Travel</a></li>
+				<li><a href="./message.html">Message</a></li>
+            </div>
+            <!--end of nav-items-->
+            <!--导航区搜索框表单form-->
+			<div style = "display:inline-block;">
+				<form action="#">
+					<input type="search" class="search-data" placeholder="Search" required>
+					<button type="submit" class="fas fa-search">Go</button>
+				</form>
+            </div>
+            <!--end of form-->
+		</nav>
+    </div>
+    <!--end of nav-->
+    <!--内容区container,分为3个盒子，格式相同（标题、图片、内容）-->
+    <div class="container"> 
+        <!--盒子1-->       
+        <div class="box">
+            <!--内容1（标题、图片、内容）-->
+            <div class="content">
+                <a href="./introduction.html">
+                    <h1>Introduction</h1>
+                    <img src="../img/1.jpg" height="250" width="250"> 
+                    <p>快来了解更多的我吧！</p>  
+                    <p>It's me!</p>
+                </a>    
+            </div>
+            <!--end of 内容1-->
+        </div>
+        <!--end of 盒子1-->
+        <!--盒子2-->
+        <div class="box">
+            <!--内容2（标题、图片、内容）-->
+            <div class="content">
+                <a href="./travel.html">
+                    <h1>Travel</h1>
+                    <img src="../img/3.jpg" height="250" width="250">
+                    <p>被好风景收买，剩下的全是好心情。</p>     
+                    <p>Conquered by the beautiful scenery, the rest is in a good mood.</p>       
+                </a>
+            </div>
+            <!--end of 内容2-->
+        </div>
+        <!--end of 盒子2-->
+        <!--盒子3-->
+        <div class="box" >
+            <!--内容3（标题、图片、内容）-->
+            <div class="content">
+                <a href="./message.html">
+                    <h1>Message</h1>
+                    <img src="../img/4.jpg" height="250" width="250">  
+                    <p>有什么对我想说的?</p>                    
+                    <p>What do you want to say to me?</p>   
+                </a>            
+            </div>
+            <!--end of 内容3-->
+        </div>
+        <!--end of 盒子3-->
+    </div>
+    <!--end of container-->
+    <!--页脚footer-->
+    <div class="footer">
+        Copyright © 2020 Powered by DCY
+    </div>
+    <!--end of footer-->
+</body>
+</html>

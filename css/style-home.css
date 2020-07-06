@@ -1,0 +1,203 @@
+*{
+    /*外边距为0*/
+    margin: 0;
+    /*内边距为0*/
+    padding: 0;
+    /*设置字体样式*/
+    font-family: 'Rubik',sans-serif;
+}
+
+body{
+    /*设置背景图片*/
+    background: url(../img/bg1.gif) no-repeat left top;
+    /*设置高度和宽度*/
+    width: 100%;
+    height: 100%;
+    /*背景铺满整个屏幕*/
+    background-size:cover;
+}
+/*导航栏*/
+nav{
+    /*上下内边距各0 左右内边距100px*/
+    padding: 0 100px;
+    /*设置背景颜色*/
+    background: #333;
+    /*弹性盒模型*/
+    display: flex;
+    /*垂直居中对齐*/
+    align-items: center;
+    /*设置高度*/
+    height: 70px;
+    /*设置字体样式*/
+    font-family: 'Montserrat', sans-serif;
+}
+/*MyPage*/
+nav .logo{
+    /*字体颜色*/
+    color: #fff;
+    /*设置字体大小*/
+    font-size: 30px;
+    /*设置字体粗细*/
+    font-weight: 600;
+    /*设置字母间距*/
+    letter-spacing: -1px;
+}
+/*整体链接*/
+nav .nav-items{
+    /*弹性盒模型*/
+    display: flex;
+    /*div将以与窗口大小相同的比例增长*/
+    flex: 1;
+    /*设置列表项目样式为不使用项目符号*/
+    list-style: none;
+    /*右内边距40px*/
+    padding: 0 0 0 40px;
+}
+/*链接*/
+nav .nav-items li{
+    /*上下内边距各0 左右内边距15px*/
+    padding: 0 15px;
+}
+/*链接样式*/
+nav .nav-items li a{
+    /*设置文本颜色*/
+    color: #fff;
+    /*设置字体大小*/
+    font-size: 18px;
+    /*设置字体粗细*/
+    font-weight: 500;
+    /*文本无修饰*/
+    text-decoration: none;
+}
+/*悬停时链接样式*/
+nav .nav-items li a:hover{
+    /*设置颜色*/
+    color: #ff3d00;   
+}
+/*搜索框*/
+nav form{
+    /*弹性盒模型*/
+    display: flex;
+    /*设置高度*/
+    height: 40px;
+    /*设置外边框圆角*/
+    border-radius: 2px;
+    /*内边距各2px*/
+    padding: 2px;
+    /*设置背景色*/
+    background: #1e232b;
+    /*设置最小宽度*/
+    min-width: 18%!important;
+    /*边框样式*/
+    border: 1px solid rgba(155, 155, 155, 0.2);
+}
+/*搜索框文本*/
+nav form .search-data{
+    /*设置高度*/
+    height: 100%;
+    /*设置宽度*/
+    width: 100%;
+    /*上下内边距各0 左右内边距10px*/
+    padding: 0 10px;
+    /*设置字体颜色*/
+    color: #fff;
+    /*设置字体粗细*/
+    font-weight: 500;
+    /*无背景色*/
+    background: none;
+    /*无边框样式*/
+    border: none;
+}
+/*搜索栏按钮*/
+nav form button{
+    /*上下内边距各0 左右内边距15px*/
+    padding: 0 15px;
+    /*按钮背景色*/
+    background: #ff3d00;
+    /*无边框样式*/
+    border: none;
+    /*光标呈现为手型*/
+    cursor: pointer;
+    /*设置字体大小*/
+    font-size: 17px;
+    /*设置字体颜色*/
+    color: #fff;
+    /*设置外边框圆角*/
+    border-radius: 2px;
+}
+/*内容区*/
+.container{
+    /*设置位置*/
+    position: relative;
+    /*最大宽度*/
+    max-width: 100%;
+    /*网格*/
+    display: grid;
+    /*列数及每列大小*/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /*行数及每行大小*/
+    grid-template-rows: minmax(100px, auto);
+    /*设置外边距*/
+    margin: 40px;
+    /*每块之间的间距*/
+    grid-gap: 10px;
+}
+/*盒子*/
+.container .box{
+    /*设置背景颜色*/
+    background-color: #333;
+    /*内边距为15px*/
+    padding: 15px;
+    /*网格*/
+    display: grid;
+    /*设置字体大小*/
+    font-size: 20px;
+    /*居中*/
+    place-items: center;
+    /*文本居中*/
+    text-align: center;
+    /*设置字体颜色*/
+    color: #fff;
+    /*设置过渡动画的持续时间*/
+    transition: 0.5s;
+}
+/*悬停时盒子*/
+.container .box:hover{
+    /*设置背景颜色*/
+    background: #e91e63;
+}
+/*主题*/
+.container .box h1{
+    /*设置字体样式*/
+    font-family: Georgia;
+    /*设置字体大小*/
+    font-size: 30px;
+    /*设置外边距*/
+    margin: 20px;
+}
+/*链接*/
+.container .box a{
+    /*无下划线*/
+    text-decoration:none;
+    /*设置字体颜色*/
+    color: #fff;
+}
+/*页尾*/
+.footer {
+    /*固定在页面最下方*/
+    bottom: 0;
+    /*固定高度为40px*/
+    height: 40px; 
+    /*宽度为屏幕宽度*/
+    width: 100%; 
+    /*文本居于正中间*/
+    text-align: center; 
+    /*行高为40px*/
+    line-height: 40px; 
+    /*设置文本颜色*/
+    color: #ABA498; 
+    /*设置字体大小*/
+    font-size: 12px; 
+    /*设置页尾栏颜色*/
+    background: #333; 
+}

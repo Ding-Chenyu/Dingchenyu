@@ -1,0 +1,237 @@
+*{
+    /*外边距为0*/
+    margin: 0;
+    /*内边距为0*/
+    padding: 0;
+    /*设置字体样式*/
+    font-family: "Open sans", sans-serif;
+}
+
+body{
+    /*设置背景图片*/
+    background: url(../img/bg1.gif) no-repeat left top;
+    /*设置高度和宽度*/
+    width: 100%;
+    height: 100%;
+    /*背景铺满整个屏幕*/
+    background-size:cover;
+}
+/*导航栏*/
+nav{
+    /*上下内边距各0 左右内边距100px*/
+    padding: 0 100px;
+    /*设置背景颜色*/
+    background: #333;
+    /*弹性盒模型*/
+    display: flex;
+    /*垂直居中对齐*/
+    align-items: center;
+    /*设置高度*/
+    height: 70px;
+    /*设置字体样式*/
+    font-family: 'Montserrat', sans-serif;
+}
+/*MyPage*/
+nav .logo{
+    /*字体颜色*/
+    color: #fff;
+    /*设置字体大小*/
+    font-size: 30px;
+    /*设置字体粗细*/
+    font-weight: 600;
+    /*设置字母间距*/
+    letter-spacing: -1px;
+}
+/*整体链接*/
+nav .nav-items{
+    /*弹性盒模型*/
+    display: flex;
+    /*div将以与窗口大小相同的比例增长*/
+    flex: 1;
+    /*设置列表项目样式为不使用项目符号*/
+    list-style: none;
+    /*右内边距40px*/
+    padding: 0 0 0 40px;
+}
+/*链接*/
+nav .nav-items li{
+    /*上下内边距各0 左右内边距15px*/
+    padding: 0 15px;
+}
+/*链接样式*/
+nav .nav-items li a{
+    /*设置文本颜色*/
+    color: #fff;
+    /*设置字体大小*/
+    font-size: 18px;
+    /*设置字体粗细*/
+    font-weight: 500;
+    /*文本无修饰*/
+    text-decoration: none;
+}
+/*悬停时链接样式*/
+nav .nav-items li a:hover{
+    /*设置颜色*/
+    color: #ff3d00;   
+}
+/*搜索框*/
+nav form{
+    /*弹性盒模型*/
+    display: flex;
+    /*设置高度*/
+    height: 40px;
+    /*设置外边框圆角*/
+    border-radius: 2px;
+    /*内边距各2px*/
+    padding: 2px;
+    /*设置背景色*/
+    background: #1e232b;
+    /*设置最小宽度*/
+    min-width: 18%!important;
+    /*边框样式*/
+    border: 1px solid rgba(155, 155, 155, 0.2);
+}
+/*搜索框文本*/
+nav form .search-data{
+    /*设置高度*/
+    height: 100%;
+    /*设置宽度*/
+    width: 100%;
+    /*上下内边距各0 左右内边距10px*/
+    padding: 0 10px;
+    /*设置字体颜色*/
+    color: #fff;
+    /*设置字体粗细*/
+    font-weight: 500;
+    /*无背景色*/
+    background: none;
+    /*无边框样式*/
+    border: none;
+}
+/*搜索栏按钮*/
+nav form button{
+    /*上下内边距各0 左右内边距15px*/
+    padding: 0 15px;
+    /*按钮背景色*/
+    background: #ff3d00;
+    /*无边框样式*/
+    border: none;
+    /*光标呈现为手型*/
+    cursor: pointer;
+    /*设置字体大小*/
+    font-size: 17px;
+    /*设置字体颜色*/
+    color: #fff;
+    /*设置外边框圆角*/
+    border-radius: 2px;
+}
+/*图文队列部分*/
+.team-section{
+    /*设置相对高度*/
+    height: 100vh;
+    /*弹性盒模型*/
+    display: flex;
+}
+/*图片*/
+.address{
+    /*弹性布局*/
+    flex: 1;
+    /*溢出隐藏*/
+    overflow: hidden;
+    /*光标呈现为手型*/
+    cursor: pointer;
+    /*相对位置*/
+    position: relative;
+    /*设置过渡动画的持续时间*/
+    transition: 0.6s;
+}
+/*图片悬停*/
+.address:hover{
+    /*弹性布局*/
+    flex:3
+}
+/*图片部分*/
+.address-pic{
+    /*绝对位置*/
+    position: absolute;
+    /*相对高度*/
+    height: 100%;
+    left: 50%;
+    /*居中*/
+    transform: translate(-50%);
+    /*将图片过滤成灰色*/
+    filter: grayscale(80%);
+    /*设置过渡动画的持续时间*/
+    transition: 0.3s;
+}
+/*图片悬停时*/
+.address:hover .address-pic{
+    /*图片不过滤成灰色*/
+    filter: grayscale(0);
+}
+/*图片文本*/
+.address-info{
+    /*绝对位置*/
+    position: absolute;
+    /*距底部10px*/
+    bottom: 10px;
+    /*文本居中*/
+    text-align: center;
+    /*宽度*/
+    width: 100%;
+    /*字体完全透明*/
+    opacity: 0;
+    /*设置过渡动画的持续时间*/
+    transition: 0.2s;
+}
+/*悬停时文本*/
+.address:hover .address-info{
+    /*字体完全不透明*/
+    opacity: 1;
+    /*设置与底部距离*/
+    bottom: 60px;
+    /*设置过渡动画的持续时间*/
+    transition-delay: 0.6s;
+}
+/*图片城市*/
+.address-info h1{
+    /*设置字体大小*/
+    font-size: 20px;
+    /*设置字体颜色*/
+    color: #fff;
+}
+/*图片地点*/
+.address-info h3{
+    /*设置字体颜色*/
+    color: yellowgreen;
+    /*设置字体样式*/
+    font-style: oblique;
+    /*设置上外边距*/
+    margin-top: 8px;
+    /*设置下外边距*/
+    margin-bottom: 20px;
+}
+/*图片文字解释*/
+.address-info h5{
+    /*设置字体颜色*/
+    color: #fff;
+}
+/*页尾*/
+.footer {
+    /*固定在页面最下方*/
+    bottom: 0;
+    /*固定高度为40px*/
+    height: 40px; 
+    /*宽度为屏幕宽度*/
+    width: 100%; 
+    /*文本居于正中间*/
+    text-align: center; 
+    /*行高为40px*/
+    line-height: 40px; 
+    /*设置文本颜色*/
+    color: #ABA498; 
+    /*设置字体大小*/
+    font-size: 12px; 
+    /*设置页尾栏颜色*/
+    background: #333; 
+}

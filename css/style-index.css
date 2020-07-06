@@ -1,0 +1,84 @@
+body {
+    /*内边距为0*/
+    padding: 0;
+    /*外边距为0*/
+    margin: 0;
+    /* 设置背景图片 */
+    background: url(../img/index-bg.jpg) no-repeat;
+    /* 相对宽度，根据浏览器窗口定义大小*/
+    width: 100%;
+    height: 100%;
+    /*背景铺满整个屏幕*/
+    background-size:cover; 
+}
+
+.box {
+    /* 继承父盒子的宽度 如果是设置百分比的话 */
+    width: 25%;
+    /*设置背景颜色*/
+    background: rgba(0, 0, 0, .5);
+    /*设置外边距*/
+    margin: 0 auto;
+    /*设置上外边距*/
+    margin-top: 5%;
+    /*文本居中*/
+    text-align: center;
+    /*设置文本颜色*/
+    color: white;
+}
+
+.box img {
+    /* 设置图片的大小 */
+    padding-top: 10px;
+    /*设置宽度和高度*/
+    width: 150px;
+    height: 150px;
+    /*图片为圆形*/
+    border-radius: 50%;
+}
+
+.box h1 {
+    /*设置字体大小*/
+    font-size: 35px;
+    /*设置字体粗细*/
+    font-weight: 100;
+}
+
+.box h5 {
+    /*设置字体大小*/
+    font-size: 20px;
+    /*设置字体粗细*/
+    font-weight: 100;
+    /* 设置对象上下间距 */
+    margin: 10px;
+}
+
+.box p {
+    /*设置字体样式*/
+    font: italic 1em Georgia;
+    /*文本居中*/
+    text-align: center; 
+}
+
+.box a{
+    display: inline-block;
+    /*取消下划线*/
+    text-decoration: none;
+    /*设置字体颜色*/
+    color: #428bca;
+    /*边框线*/
+    border:2px solid #428bca;
+    /*字母为大写*/
+    text-transform: uppercase;
+    /* 设置对象间距 */
+    padding: 7px 19px;
+    /*过渡延迟时间*/
+    transition: 0.4s linear;
+  }
+   
+.box a:hover{
+    /*悬停时文本颜色*/
+    color: #fff;
+    /*悬停时背景颜色*/
+    background: #428bca;
+   }
